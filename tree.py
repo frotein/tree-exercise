@@ -1,9 +1,12 @@
-import sys
+# input the number of levels
+levels = input("levels in tree: ")
 
-# If there are more or less than one input, return an error
-if len(sys.argv) != 2 :
-	print "Error : invalid number of inputs"
+# if the input is not a positive integer, retun an error
+if not isinstance(levels , int) :
+	print "Error: input is not a positive Integer"
 else :
-	# otherwise, set input as a number 
-	num = int(sys.argv[1])
-	print num
+	if levels < 0 :
+		print "Error: input is not a positive Integer"
+	
+
+
