@@ -33,12 +33,11 @@ else :
 		print "Error: input is not a positive Integer"
 	else :
 		# initialize tree as a list
-		totalTree = []
+	
 		treeIn = [1]
 		j = 1
 		print treeIn
 		while j < levels :
-			totalTree.append(treeIn)
 			treeIn = computeNextLevel(treeIn)
 			print treeIn
 			j = j + 1
